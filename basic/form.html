@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="page1.html">page 1</a> 
+       <a href="table.html">Table</a>
+       <a href="index.html">Home</a> <br>
+    <form>
+        <label for="name">User Name</label><br>
+        <input type="text" name="name" placeholder="Enter your Name"><br>
+        <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Others</option>
+        </select><br>
+        <select name="skills" id="skills" aria-placeholder="skills" style="width: 100px;">
+            <optgroup label="Frontend">
+                <option value="html">Html</option>
+                <option value="css">CSS</option>
+                <option value="js">JS</option>
+            </optgroup>
+            <optgroup label="Backend">
+                <option value="java">Java</option>
+                <option value="Python">python</option>
+                <option value=".Net">.Net</option>
+            </optgroup>
+            <optgroup label="Marketing">
+                <option value="om">Online Marketing</option>
+                <option value="oom">ofline Marketing</option>
+            </optgroup>
+            <optgroup label="Serverside">
+                <option value=""></option>
+            </optgroup>
+        </select><br>
+        <textarea name="discription" id="textarea" placeholder="enter your text"></textarea><br>
+        <label for="browser1">Select your browsers</label><br>
+        <input list="browsers" name="browser1" id="browser1"><br>
+        <datalist id="browsers">
+            <option value="Edge"></option>
+            <option value="Firefox"></option>
+            <option value="Chrome"></option>
+            <option value="Opera"></option>
+            <option value="Safari"></option> 
+        </datalist><br>
+        <select name="education" id="education">
+            <optgroup label="medical"> 
+                
+                    <option value="pharmacy">pharmacy</option>
+                    <option value="mbbs">Mbbs</option>
+             
+            
+            </optgroup>
+            <optgroup label="medical"> 
+                
+                    <option value="pharmacy">pharmacy</option>
+                    <option value="mbbs">Mbbs</option>
+             
+        
+            </optgroup>
+            
+        </select><br>
+          <input type="radio" id="red" name="fav_color" value="red">
+    <label for="red">Red</label><br>
+          <input type="radio" id="red" name="fav_color" value="blue">
+    <label for="blue">blue</label><br>
+          <input type="radio" id="green" name="fav_color" value="green">
+    <label for="green">green</label><br>
+
+     <input type="checkbox" id="reading" name="hobbies" value="reading" >
+    <label for="reading">Reading</label><br>
+
+    <input type="checkbox" id="gaming" name="hobbies" value="gaming">
+    <label for="gaming">Gaming</label><br>
+
+    <input type="checkbox" id="coding" name="hobbies" value="coding" >
+    <label for="coding">Coding</label><br>
+    </form>
+</body>
+</html>

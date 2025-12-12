@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <form action="">
+        <h4 style="text-align: center;">PORTFOLIO</h4>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div style="display: flex;">
+                <label for="firstName">First Name<sup>*</sup></label><br>
+                <input type="text" id="firstName" placeholder="Enter your Firstname" autofocus /><br />
+                <input type="text" id="lastName" placeholder="Enter your Lastname" /><br />
+                <input type="number" value="Portfolio" id="age" placeholder="Enter your age" /><br />
+                <input type="date" value="Portfolio" id="dob" placeholder="Date of birth" /><br />
+                <input type="number" pattern="[0-9]{10}" name="mobileNumber" placeholder="Enter Mobile number"
+                    id="mobileNumber" /><br />
+                <input type="number" pattern="[0-9]{10}" name="altMobileNumber"
+                    placeholder="Enter Alternative Mobile number" id="altMobileNumber" /><br />
+                <input type="email" pattern="[0-9]{10}" name="email" placeholder="Enter Email" id="email" /><br />
+                <textarea name="address" id="address" placeholder="Enter your address"></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Projects</legend>
+            <input type="text" id="projecttitle" placeholder="Enter your project title" /><br />
+            <input type="number" id="daysToComplete" placeholder="No of days to complete" /><br />
+            <input type="text" name="techUsed" id="techUsed" placeholder="Technologies Used" /><br />
+            <textarea name="projectDiscription" id="projectDiscription"
+                placeholder="Project Discription"></textarea><br />
+            <input type="button" value="Add" />
+        </fieldset>
+        <fieldset>
+            <legend>Skill-set</legend>
+            <input type="text" list="frontendTech" name="frontEndTech" id="frontEndTech"
+                placeholder="Enter your Frontend Technologies" /><br />
+            <datalist id="frontendTech">
+                <option value="HTML"></option>
+                <option value="CSS"></option>
+                <option value="JavaScript"></option>
+                <option value="React"></option>
+                <option value="TypeScript"></option>
+                <option value="Angular"></option>
+            </datalist>
+            <input type="text" list="backendTech" name="backEndTech" id="backEndTech"
+                placeholder="Enter your Backend Technologies" /><br />
+            <datalist id="backendTech">
+                <option value="Java"></option>
+                <option value="SpringBoot"></option>
+                <option value=".Net"></option>
+                <option value="C"></option>
+                <option value="C#"></option>
+                <option value="python"></option>
+            </datalist>
+            <input type="text" list="database" name="databaseSide" id="databaseSide"
+                placeholder="Enter your Database Technologies" /><br />
+            <datalist id="database">
+                <option value="MySQL"></option>
+                <option value="MySQL Workbench"></option>
+                <option value="MangoDB"></option>
+            </datalist>
+            <input type="text" list="othertech" name="otherTech" id="otherTech"
+                placeholder="Enter your other Technologies" /><br />
+            <datalist id="otherTech">
+                <option value="Designing"></option>
+                <option value="Marketing"></option>
+                <option value="Word"></option>
+            </datalist>
+        </fieldset>
+        <fieldset>
+            <legend>Educational Qualificaion</legend>
+            <input type="text" list="educationlevel" name="educationLevel" id="educationLevel"
+                placeholder="Educational qualification"><br>
+            <datalist id="educationlevel">
+                <option value="10 standard"></option>
+                <option value="Inter/Diploma"></option>
+                <option value="Graduation"></option>
+                <option value="Post-graduation"></option>
+            </datalist>
+            <input type="text" id="college" name="College" placeholder="Enter College/Univercity"><br>
+            <input type="month" name="Year of passout" id="yearOfPassout" placeholder="Year Of Passout"><br>
+            <input type="number" id="percentage" name="percentage" placeholder="CGPA/Percentage"><br>
+            <input type="button" value="Add" />
+        </fieldset>
+        <fieldset>
+            <legend>Certification</legend>
+            <input type="text" id="certification" placeholder="Any Certification" name="certification"><br>
+            <input type="button" value="Add" />
+        </fieldset>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
