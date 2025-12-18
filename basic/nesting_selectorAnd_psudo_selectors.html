@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nesting Selector</title>
+    <style>
+        .name1 #name2 span:hover{
+            background-color: rgb(240, 4, 4);
+            color: white;
+        }
+        .name1 #name2 span{
+            background-color: blue;
+            color: white;
+        }
+        input:focus{
+            background-color: rgb(118, 121, 124);
+            color: white;
+        }
+        input:visited{
+            background-color: rgb(8, 115, 223);
+            color: white;
+        }
+        h1::first-letter{
+            background-color: rgb(255, 0, 0);
+            color: aliceblue;
+            text-transform: lowercase;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="name1">
+        <h1>Nesting Selector</h1>
+        <div id="name2">
+            <p>Nesting Selecor <span>Change colour</span></p>
+        </div>
+        <div>
+            <label for="fName"> Name</label>
+            <input type="text" id="fName">
+            <label for="lName"> Name</label>
+            <input type="text" id="lName">
+        </div>
+
+    </div>
+    
+</body>
+</html>
