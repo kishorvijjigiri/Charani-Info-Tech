@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: rgb(179, 180, 182);
+        }
+    [id|=a] {
+        color: rgb(234, 240, 235);
+        background-color: blue !important;
+    }
+    [id~=a]{
+        color: rgb(226, 234, 227);
+        background-color: blue;
+    }
+    [type]{
+        color: rgb(226, 234, 227);
+        background-color: rgb(235, 95, 8);
+    }
+    .hello{
+        background-color: black;
+    }
+    #b{
+        background-color: yellow;
+    }
+     [type=name4]{
+        background-color: aqua;
+    }
+    [id~=b]{
+        background-color: rgb(255, 0, 111);
+    }
+   
+    p{
+        background-color: darkmagenta;
+    }
+    </style>
+</head>
+<body>
+    <p id="b-a" class="hi" type="name"> This is for attribute selector for | value after hyphon</p>
+    <p id="a-b" class="hello" type="name1"> This is for attribute selector for | value before hyphon</p>
+    <p id="b a" class="hi" type="name3"> This is for attribute selector for ~ value after space</p>
+    <p id="a b" type="name4" class="hi" > This is for attribute selector for ~ value before space</p>
+    <p id="b" type="name4" class="hi" style="background-color: blue;" > This is for attribute selector for ~ value before space</p>
+</body>
+</html>
