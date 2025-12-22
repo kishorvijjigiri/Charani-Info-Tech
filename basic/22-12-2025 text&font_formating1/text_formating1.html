@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .t1{
+            color: blue;
+        }
+        .t2{
+           text-align: center;
+        }
+        .t21{
+           text-align: right;
+        }
+        .t22{
+           text-align: left;
+        }
+        .t3{
+           text-decoration: overline;
+           text-decoration-color: blue;
+           text-decoration-style: double;
+        }
+        .t31{
+           text-decoration: underline;
+           text-decoration-thickness: 2px;
+        }
+        .t32{
+           text-decoration:none;
+        }
+        .t4{
+            text-transform: capitalize;
+        }
+        .t41{
+            text-transform: uppercase;
+        }
+        .t42{
+            text-transform:lowercase;
+        }
+        .t5{
+            text-indent: 1cm;
+        }
+        .t6{
+            letter-spacing: 2px;
+        }
+        .t8{
+            word-spacing: 5px;
+        }
+        .t9{
+            line-height: 70px;
+        }
+        .t10{
+           direction: ltr;
+        }
+        .t101{
+            direction: rtl;
+        }
+        .t11{
+            text-shadow: 2px 3px;
+        }
+        .t111{
+            text-shadow: 2px 3px 10px blue;
+        }
+        .t112{
+            text-shadow: 2 3 10 blue;/*we need to apply px or any thing with out any units it is not exicuting */
+        }
+        .nav{
+            color: white;
+            background-color: blue;
+            padding: 10px;
+        }
+        .nav ul li a{
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            background-color: rgb(9, 9, 136);
+        }
+        .nav ul{
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+        }
+         div ul li a:active{
+            color: red;
+        }
+       div ul li a:hover{
+            background-color: rgb(122, 122, 202);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul class="navbar">
+            <li><a class="" href="linksWithPsudoClasses.html">links with psudo class</a></li>
+            <li><a class="" href="font_properties.html">Font-properties</a></li>
+            <li class="active"><a class="active" href="text_formating1.html">Text-formating properties</a></li>
+        </ul>
+    </div>
+    <h1>This is text Formating properties</h1>
+    <p class="t1">colour property</p>
+    <p class="t2">text align property</p>
+    <p class="t21">text align property</p>
+    <p class="t22">text align property</p>
+    <p class="t3">text-decoration property overline</p>
+    <p class="t31">text-decoration property underline</p>
+    <p class="t32">text-decoration property</p>
+    <p class="t4">text-transform property capitalize</p>
+    <p class="t41">text-transform property uppercase</p>
+    <p class="t42">text-transform property lowercase</p>
+    <p class="t5">text-indent property</p>
+    <p class="t6">letter spacing property</p>
+    <p class="t7">colour property</p>
+    <p class="t8">This is for the word-spacing property</p>
+    <p class="t9">line height property</p>
+    <p class="t10">diection property right to left</p>
+    <p class="t101">diection property left to right</p>
+    <h1 class="t11">text-shadow property</h1>
+    <h1 class="t111">text-shadow property</h1>
+    <h1 class="t112">text-shadow property</h1>
+</body>
+</html>
