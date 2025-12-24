@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 1px solid black;
+            border-radius: 2px;
+            display: inline-block;
+            height: 50px;
+            width: 20%;
+            margin:4%;
+            padding: 2%;
+            overflow: hidden;
+            color: white;
+            background-color: darkorange;
+        }
+        .box1{
+            border: 1px solid black;
+            border-radius: 2px;
+            display: inline-block;
+            height: 50px;
+            width: 20%;
+            margin:4%;
+            padding: 2%;
+            overflow: visible;
+        }
+        .box2{
+            border: 1px solid black;
+            border-radius: 2px;
+            display: inline-block;
+            height: 50px;
+            width: 20%;
+            margin:4%;
+            padding: 2%;
+            overflow: scroll;
+            color: white;
+            background-color: rgb(122, 118, 118);
+            overflow-x: hidden;
+        }
+        .box3{
+            border: 1px solid black;
+            border-radius: 2px;
+            display: inline-block;
+            height: 50px;
+            width: 20%;
+            margin:4%;
+            padding: 2%;
+            overflow: auto;
+            color: white;
+            background-color: blue;
+        }
+        h1{
+            text-align: center;
+        }
+        .inner{
+            border: 1px solid rgb(245, 243, 243);
+            padding: 10px;
+            margin: 10px;
+            color: white;
+        }
+        .outer{
+            padding: 30px;
+            background-color: blue;
+            position: static;
+            top: 0px;
+        }
+        .outer .inner{
+            display: inline;
+            justify-content: space-evenly;
+        }
+        .inner1{
+            border: 1px solid rgb(245, 243, 243);
+            padding: 10px;
+            margin: 10px;
+            color: white;
+        }
+        .outer1{
+            padding: 30px;
+            background-color: blue;
+            position: sticky;
+            top: 0px;
+            margin: 20px;
+        }
+        .outer1 .inner1{
+            display: inline;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">Home</div>
+        <div class="inner">About</div>
+        <div class="inner">Blog</div>
+    </div>
+    <div class="outer1">
+        <div class="inner1">Home</div>
+        <div class="inner1">About</div>
+        <div class="inner1">Blog</div>
+    </div>
+    
+    <div class="main">
+        <h1>This is for the overflow of the content in the box hidden</h1>
+        <div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quo maiores esse adipisci excepturi amet quaerat debitis, accusantium quidem atque possimus blanditiis labore porro error maxime officiis rem necessitatibus hic.</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, consequatur? Explicabo, quae! Odio totam labore, modi officiis ullam eius architecto. Nam explicabo, iure maxime nobis esse veritatis deserunt pariatur atque!</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptates ipsam nisi non reprehenderit iure iusto nostrum possimus totam ipsum ducimus, fugiat delectus dicta maxime. Atque, aspernatur at. Recusandae, possimus?</div>
+    </div>
+    <div class="main">
+        <h1>This is for the overflow of the content in the box visible</h1>
+        <div class="box1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quo maiores esse adipisci excepturi amet quaerat debitis, accusantium quidem atque possimus blanditiis labore porro error maxime officiis rem necessitatibus hic.</div>
+        <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, consequatur? Explicabo, quae! Odio totam labore, modi officiis ullam eius architecto. Nam explicabo, iure maxime nobis esse veritatis deserunt pariatur atque!</div>
+        <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptates ipsam nisi non reprehenderit iure iusto nostrum possimus totam ipsum ducimus, fugiat delectus dicta maxime. Atque, aspernatur at. Recusandae, possimus?</div>
+    </div>
+    <div class="main">
+        <h1>This is for the overflow of the content in the box scroll</h1>
+        <div class="box2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quo maiores esse adipisci excepturi amet quaerat debitis, accusantium quidem atque possimus blanditiis labore porro error maxime officiis rem necessitatibus hic.</div>
+        <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, consequatur? Explicabo, quae! Odio totam labore, modi officiis ullam eius architecto. Nam explicabo, iure maxime nobis esse veritatis deserunt pariatur atque!</div>
+        <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptates ipsam nisi non reprehenderit iure iusto nostrum possimus totam ipsum ducimus, fugiat delectus dicta maxime. Atque, aspernatur at. Recusandae, possimus?</div>
+    </div>
+    <div class="main">
+        <h1>This is for the overflow of the content in the box auto</h1>
+        <div class="box3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quo maiores esse adipisci excepturi amet quaerat debitis, accusantium quidem atque possimus blanditiis labore porro error maxime officiis rem necessitatibus hic.</div>
+        <div class="box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, consequatur? Explicabo, quae! Odio totam labore, modi officiis ullam eius architecto. Nam explicabo, iure maxime nobis esse veritatis deserunt pariatur atque!</div>
+        <div class="box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptates ipsam nisi non reprehenderit iure iusto nostrum possimus totam ipsum ducimus, fugiat delectus dicta maxime. Atque, aspernatur at. Recusandae, possimus?</div>
+    </div>
+    <div>
+        <h1 style="border: 0px; position: fixed; right: 5%; background-color: blue; color: white; bottom: 10%; ">HELP</h1>
+    </div>
+    
+</body>
+</html>
