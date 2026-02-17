@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var person = {
+            name: "Krishna",
+            age: 25
+        };
+
+        Object.freeze(person);
+
+        person.age = 30;  // Will not change
+        console.log(person.age);  // 25
+
+    </script>
+</body>
+
+</html>

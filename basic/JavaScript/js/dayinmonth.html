@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    hi 
+    <script>
+        let year = 2016;
+let month = 3; // Feb
+
+let days;
+
+if (month === 2) {
+  if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+    days = 29;
+  } else {
+    days = 28;
+  }
+} else if ([4,6,9,11].includes(month)) {
+  days = 30;
+} else {
+  days = 31;
+}
+
+console.log("Days in month:", days);
+    </script>
+</body>
+</html>

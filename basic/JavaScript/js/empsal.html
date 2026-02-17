@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Employee(name, yearlySalary, workingDays, month) {
+    this.name = name;
+    this.yearlySalary = yearlySalary;
+    this.workingDays = workingDays;
+    this.month = month;
+}
+
+Employee.prototype.getMonthSal = function () {
+    var dailySalary = this.yearlySalary / 365;
+    var monthSalary = dailySalary * this.workingDays;
+
+    console.log("Employee:", this.name);
+    console.log("Month:", this.month);
+    console.log("Salary:", monthSalary.toFixed(2));
+};
+
+// Example
+var emp1 = new Employee("Krishna", 1200000, 20, "Jun");
+emp1.getMonthSal();
+
+    </script>
+</body>
+</html>

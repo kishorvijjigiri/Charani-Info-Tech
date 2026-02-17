@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>assignment</h1>
+    <script>
+    for (var i = 0; i < 4; i++) {
+        for (var j = 0; j < 4; j++) {
+        if (i + j == 3) 
+        continue ;
+        console.log(i, j);
+    }
+}
+
+for (var a = 1; a <= 10; a++) {
+    for (var b = 1; b <= 10; b++) {
+        if (a + b === 10) {
+            console.log("Numbers:", a, b);
+            break ;
+        }
+    }
+}
+
+for (var c = 1; c <= 5; c++) {
+    var row = "";
+    for (var d = 1; d <= c; d++) {
+        row += "* ";
+    }
+    console.log(row);
+}
+
+
+    </script>
+</body>
+</html>

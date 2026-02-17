@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>hi </p>
+    <script>
+        
+function cmToIn(cm) {
+    return cm / 2.54;
+}
+
+
+function inToCm(inch) {
+    return inch * 2.54;
+}
+
+
+function convert(fn, value) {
+    return fn(value);
+}
+
+
+console.log("10 cm to inch:", convert(cmToIn, 10));
+console.log("10 inch to cm:", convert(inToCm, 10));
+
+    </script>
+</body>
+</html>

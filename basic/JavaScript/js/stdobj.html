@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    hi
+
+    <script>
+        var student = {
+    firstName: 'Abhi',
+    lastName: 'Krishna',
+
+    getFullName: function () {
+        return this.firstName + " " + this.lastName;
+    },
+
+    age: 21,
+    marks: [30, 40, 50, 60, 70],
+
+    getTotalMarks: function () {
+        return this.marks.reduce((sum, mark) => sum + mark, 0);
+    },
+
+    getResult: function () {
+        var avg = this.getTotalMarks() / this.marks.length;
+        return avg >= 35 ? "Pass" : "Fail";
+    }
+};
+
+console.log(student);
+console.log(student.getFullName());
+console.log("Total Marks:", student.getTotalMarks());
+console.log("Result:", student.getResult());
+
+    </script>
+    <script src="./stdobj.js"></script>
+</body>
+</html>

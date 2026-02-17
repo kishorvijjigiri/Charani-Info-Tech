@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+/* Background Image with Blur and Shade */
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(4px) brightness(0.4); /* Blur + Dark shade combined */
+    transform: scale(1.1); /* Hides blurry edges */
+}
+
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+}
+
+/* Elevated Navigation */
+.top-nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 30px 0;
+    z-index: 10;
+}
+
+.top-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.top-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.top-nav ul li a:hover {
+    color: #ffc107; /* Highlight color */
+}
+
+/* Elevated Caption Content */
+.hero-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    padding: 20px;
+    z-index: 5;
+}
+
+.hero-content h3 {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 8px;
+    margin-bottom: 10px;
+    text-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.hero-content h5 {
+    font-size: 1.5rem;
+    color: #ffc107;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 30px;
+}
+
+/* Call to Action Button */
+.btn-custom {
+    padding: 12px 30px;
+    border: 2px solid #ffc107;
+    color: #ffc107;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background: #ffc107;
+    color: #000;
+}
+ul li .active {
+    font-weight: bold;
+    color: #ffc107;
+}
+h2, h3{
+    font-size: 36px;
+    color: #ffc107;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h6{
+    font-size: 20px;
+    color: #ffc107;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.about, .skills, .projects, .contact, .experience {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #f0f0f0;
+    margin-top: 20px;
+    text-align: center;
+}
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+.techskills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.techskills ul{
+    border: 1px solid #ffc107;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+li h5{
+    font-size: 18px;
+    color: #ffc107;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.project-list ul li a{
+    color: #ffc107;
+    text-decoration: none !important;
+    font-size: 18px;
+}
+.project-list ul li{
+    margin-bottom: 10px;
+    border: 1px solid #ffc107;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+.active{
+    background-color: #ffc107;
+    color: #fffdfd !important;
+    font-weight: bold;
+}

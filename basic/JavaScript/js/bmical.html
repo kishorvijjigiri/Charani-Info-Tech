@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1> hi weight calculator</h1>
+    <script>
+        // Input
+let height = 1.72;   // meters
+let weight = 70;     // kg
+
+// BMI formula
+let bmi = weight / (height * height);
+let category = "";
+
+// BMI categories
+if (bmi < 18.5) {
+  category = "Under Weight";
+} else if (bmi >= 18.5 && bmi <= 24.9) {
+  category = "Healthy Weight";
+} else if (bmi >= 25 && bmi <= 29.9) {
+  category = "Over Weight";
+} else {
+  category = "Obesity";
+}
+
+// Output
+console.log("BMI :", bmi.toFixed(2), category);
+    </script>
+</body>
+</html>

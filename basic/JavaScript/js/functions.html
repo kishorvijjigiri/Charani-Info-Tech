@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>hi functions</h1> 
+
+   <script>
+    
+function strchar(str) {
+    for (var i = 0; i < str.length; i++) {
+        console.log(str[i]);
+    }
+}
+
+strchar("Nikhil");
+
+function strchar1() {
+    for (var i = 0; i < arguments[0].length; i++) {
+        console.log(arguments[0][i]);
+    }
+}
+
+strchar1("hello world");
+
+
+// Passing function to another function
+function average(a, b, fn) {
+    return fn(a, b) / 2;
+}
+
+   </script>
+
+   <script src="./functions.js"></script>
+</body>
+</html>
